@@ -4,7 +4,7 @@ import {resolveFirstFighter} from "../main/combat"
 let pokemonA = new Pokemon("Theo", 1000);
 let pokemonB = new Pokemon("Claudia", 50);
 
-describe("Test combat.ts", () => {
+describe("Test combat_spec.ts", () => {
 
     test("should return faster", () => {
         const starter = resolveFirstFighter(pokemonA, pokemonB, 0);

@@ -1,4 +1,4 @@
-import "main/commun/random"
+import {getRandomInt} from "./commun/random"
 
 export class Pokemon {
     name: string;
