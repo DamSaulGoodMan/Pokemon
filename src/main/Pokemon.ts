@@ -1,14 +1,23 @@
 import {getRandomInt} from "./commun/random"
+import {Attack} from "./Attack";
+import {Type} from "./Type";
 
 export class Pokemon {
     name: string;
+
     speed: number;
-    luck: number;
+    pv: number;
+    types: Array<Type>
 
-    constructor(name: string, speed: number) {
+    attacks: Array<Attack>;
+
+    constructor(name: string, speed: number, pv: number, types: Array<Type>, attacks: Array<Attack>) {
         this.name = name;
-        this.speed = speed;
 
-        this.luck = getRandomInt(10);
+        this.speed = speed;
+        this.pv = pv;
+        this.types = types;
+
+        this.attacks = attacks;
     }
 }
